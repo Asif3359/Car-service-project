@@ -11,10 +11,10 @@ const Baner = () => {
         <div>
             <div className="carousel w-full  ">
                 <div id="slide1" className="carousel-item relative w-full">
-                    <div className="hero" style={{ backgroundImage: `url(${banner1})` }}>
-                        <div className="hero-overlay bg-opacity-70"></div>
+                    <div className="hero  bg-cover bg-no-repeat bg-center bg-gradient-to-r rounded-lg" style={{ backgroundImage: `url(${banner1})` }}>
+                        <div className="hero-overlay bg-gradient-to-r from-[#2e2e2ebf] rounded-lg  "></div>
                         <div className="  text-neutral-content py-20 my-20 lg:my-40 mt-10">
-                            <div className="">
+                            <div className="p-3">
                                 <h1 className="mb-5 text-5xl font-bold">Hello there</h1>
                                 <p className="mb-5">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
                                 <div className='flex gap-1 items-center'>
@@ -25,17 +25,16 @@ const Baner = () => {
                         </div>
                     </div>
 
-                    <div className="absolute flex justify-end gap-10 mr-10 transform -translate-y-1/2 left-5 right-5 bottom-0 lg:bottom-10">
-
+                    <div className="absolute flex justify-end gap-4 transform -translate-y-1/2 left-5 right-5 bottom-0 lg:bottom-10">
                         <a href="#slide4" className="btn btn-circle">❮</a>
-                        <a href="#slide2" className="btn btn-circle">❯</a>
+                        <a href="#slide2" className="btn btn-primary btn-circle">❯</a>
                     </div>
                 </div>
                 <div id="slide2" className="carousel-item relative w-full ">
-                    <div className="hero bg-cover bg-no-repeat bg-center " style={{ backgroundImage: `url(${banner2})` }}>
-                        <div className="hero-overlay bg-opacity-70"></div>
-                        <div className="  text-neutral-content">
-                            <div className="">
+                    <div className="hero bg-cover bg-no-repeat bg-center bg-gradient-to-r rounded-lg " style={{ backgroundImage: `url(${banner2})` }}>
+                        <div className="hero-overlay bg-gradient-to-r from-[#2e2e2ebf] rounded-lg  "></div>
+                        <div className=" text-neutral-content">
+                            <div className="p-3">
                                 <h1 className="mb-5 text-5xl font-bold">Hello there</h1>
                                 <p className="mb-5">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
                                 <div className='flex gap-1 items-center'>
@@ -45,16 +44,16 @@ const Baner = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="absolute flex justify-end gap-10 mr-10 transform -translate-y-1/2 left-5 right-5 bottom-0 lg:bottom-10">
+                    <div className="absolute flex justify-end gap-4 transform -translate-y-1/2 left-5 right-5 bottom-0 lg:bottom-10">
                         <a href="#slide1" className="btn btn-circle">❮</a>
-                        <a href="#slide3" className="btn btn-circle">❯</a>
+                        <a href="#slide3" className="btn btn-primary btn-circle">❯</a>
                     </div>
                 </div>
                 <div id="slide3" className="carousel-item relative w-full ">
-                    <div className="hero bg-cover bg-no-repeat bg-center " style={{ backgroundImage: `url(${banner3})` }}>
-                        <div className="hero-overlay bg-opacity-70"></div>
+                    <div className="hero bg-cover bg-no-repeat bg-center bg-gradient-to-r rounded-lg " style={{ backgroundImage: `url(${banner3})` }}>
+                        <div className="hero-overlay bg-gradient-to-r from-[#2e2e2ebf] rounded-lg "></div>
                         <div className="  text-neutral-content">
-                            <div className="">
+                            <div className="p-3">
                                 <h1 className="mb-5 text-5xl font-bold">Hello there</h1>
                                 <p className="mb-5">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
                                 <div className='flex gap-1 items-center'>
@@ -64,16 +63,16 @@ const Baner = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="absolute flex justify-end gap-10 mr-10 transform -translate-y-1/2 left-5 right-5 bottom-0 lg:bottom-10">
+                    <div className="absolute flex justify-end gap-4 transform -translate-y-1/2 left-5 right-5 bottom-0 lg:bottom-10">
                         <a href="#slide2" className="btn btn-circle">❮</a>
-                        <a href="#slide4" className="btn btn-circle">❯</a>
+                        <a href="#slide4" className="btn btn-primary btn-circle">❯</a>
                     </div>
                 </div>
                 <div id="slide4" className="carousel-item relative w-full ">
-                    <div className="hero bg-cover bg-no-repeat bg-center " style={{ backgroundImage: `url(${banner4})` }}>
-                        <div className="hero-overlay bg-opacity-70"></div>
+                    <div className="hero bg-cover bg-no-repeat bg-center bg-gradient-to-r rounded-lg " style={{ backgroundImage: `url(${banner4})` }}>
+                        <div className="hero-overlay bg-gradient-to-r from-[#2e2e2ebf] rounded-lg  "></div>
                         <div className="  text-neutral-content">
-                            <div className="">
+                            <div className="p-3">
                                 <h1 className="mb-5 text-5xl font-bold">Hello there</h1>
                                 <p className="mb-5">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
                                 <div className='flex gap-1 items-center'>
@@ -83,9 +82,9 @@ const Baner = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="absolute flex justify-end gap-10 mr-10 transform -translate-y-1/2 left-5 right-5 bottom-0 lg:bottom-10">
+                    <div className="absolute flex justify-end gap-4 transform -translate-y-1/2 left-5 right-5 bottom-0 lg:bottom-10">
                         <a href="#slide3" className="btn btn-circle">❮</a>
-                        <a href="#slide1" className="btn btn-circle">❯</a>
+                        <a href="#slide1" className="btn btn-primary btn-circle">❯</a>
                     </div>
                 </div>
             </div>
@@ -94,3 +93,8 @@ const Baner = () => {
 };
 
 export default Baner;
+
+// bg-opacity-70
+// bg-opacity-70
+// bg-opacity-70
+// bg-opacity-70

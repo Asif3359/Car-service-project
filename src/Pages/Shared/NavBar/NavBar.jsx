@@ -20,7 +20,7 @@ const NavBar = () => {
                         {links}
                     </ul>
                 </div>
-                <Link to="/" className="btn btn-sm btn-square btn-ghost normal-case text-xl w-20"><img className='w-16' src={logo} alt="" /></Link>
+                <Link to="/" className=" normal-case text-xl w-20"><img className='w-16' src={logo} alt="" /></Link>
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1">

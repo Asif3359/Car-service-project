@@ -1,3 +1,4 @@
+import About from "../About/About";
 import Baner from "../Baner/Baner";
 
 
@@ -5,7 +6,7 @@ const Home = () => {
     return (
         <div>
             <Baner></Baner>
-            This is Home
+            <About></About>
             
         </div>
     );
