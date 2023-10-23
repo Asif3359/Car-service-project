@@ -1,13 +1,30 @@
+import { useContext } from "react";
 import imgLog from "../../assets/images/login/login.svg"
 import { Link } from 'react-router-dom';
+import { AuthContext } from "../../Providers/AuthProviders";
 
 const SingUp = () => {
+
+
+    const {createUser}=useContext(AuthContext);
+
     const handleSingUp = (event) => {
         event.preventDefault();
         const from = event.target;
         const name = from.name.value;
         const email = from.email.value;
-        const ConfirmPassword = from.ConfirmPassword.value;
+        const password = from.password.value;
+
+        console.log(name,email,password);
+
+        createUser(email,password)
+            .then(result =>{
+                const user=result.user;
+                console.log(user);
+            } )
+            .catch(error=>{
+                console.log(error);
+            })
     }
     return (
         <div className="hero min-h-screen bg-base-200">
@@ -31,10 +48,10 @@ const SingUp = () => {
                         <input type="email" id="email" name='email' placeholder="email" className="input input-bordered" required />
                     </div>
                     <div className="form-control">
-                        <label htmlFor="ConfirmPassword" className="label">
+                        <label htmlFor="password" className="label">
                             <span className="label-text">Confirm Password</span>
                         </label>
-                        <input type="ConfirmPassword" id="ConfirmPassword" name='ConfirmPassword' placeholder="Confirm Password" className="input input-bordered" required />
+                        <input type="password" id="password" name='password' placeholder="Confirm Password" className="input input-bordered" required />
                         <label htmlFor="link" className="label">
                             <a href="#" className="label-text-alt link link-hover">Forgot password?</a>
                         </label>
