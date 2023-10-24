@@ -35,6 +35,9 @@ const Services = () => {
                     </div>)
                 }
             </div>
+            <div>
+                <button className='btn btn-outline btn-warning mt-7'>More Services</button>
+            </div>
         </div>
     );
 };

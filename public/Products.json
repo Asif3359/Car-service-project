@@ -1,0 +1,50 @@
+[
+    {
+        "id": 1,
+        "name": "Car Engine Plug",
+        "price": 15.99,
+        "short_description": "High-performance engine plug for improved ignition and fuel efficiency.",
+        "rating": 4.7,
+        "image": "https://i.ibb.co/fxpyYTf/1.png"
+    },
+    {
+        "id": 2,
+        "name": "Car Air Filter",
+        "price": 12.99,
+        "short_description": "Premium air filter for clean and efficient air intake into your engine.",
+        "rating": 4.5,
+        "image": "https://i.ibb.co/Dw9g9JG/2.png"
+    },
+    {
+        "id":3,
+        "name": "Cool LED Light",
+        "price": 29.99,
+        "short_description": "Cool blue LED light strips to enhance your car's interior lighting.",
+        "rating": 4.2,
+        "image": "https://i.ibb.co/zXSpPY5/3.png"
+    },
+    {
+        "id":4,
+        "name": "Tiare",
+        "price": 9.99,
+        "short_description": "Exotic tiare flower air freshener for a refreshing scent in your car.",
+        "rating": 4.8,
+        "image": "https://i.ibb.co/bLjs7j1/5.png"
+    },
+    {
+        "id":5,
+        "name": "Engine Plug Battery",
+        "price": 8.99,
+        "short_description": "Replacement battery for your engine plug remote starter.",
+        "rating": 4.0,
+        "image": "https://i.ibb.co/v4zYVqV/6.png"
+    },
+    {
+        "id":6,
+        "name": "Extra",
+        "price": 8.99,
+        "short_description": "Replacement battery for your engine plug remote starter.",
+        "rating": 4.0,
+        "image": "https://i.ibb.co/v4zYVqV/6.png"
+    }
+]

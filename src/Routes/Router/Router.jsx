@@ -4,6 +4,7 @@ import App from '../../App';
 import Home from '../../Pages/Home/Home/Home';
 import Login from '../../Pages/Login/Login';
 import SingUp from '../../Pages/SingUp/SingUp';
+import Profile from '../../Pages/Profile/Profile';
 
 const router = createBrowserRouter([
     {
@@ -15,6 +16,14 @@ const router = createBrowserRouter([
         </div>
       </div>,
       children:[
+        {
+            path:"/",
+            element:<Home></Home>
+        },
+        {
+            path:"/profile",
+            element:<Profile></Profile>
+        },
         {
             path:"/",
             element:<Home></Home>
