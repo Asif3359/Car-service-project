@@ -3,10 +3,12 @@ import imgLog from "../../assets/images/login/login.svg"
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { AuthContext } from "../../Providers/AuthProviders";
 import axios from "axios";
+import useAuth from "../../Hooks/useAuth";
 
 const Login = () => {
 
-    const { singIn } = useContext(AuthContext);
+    const { singIn } = useAuth();
+    // const { singIn } = useContext(AuthContext);
     const location = useLocation();
     const navigate = useNavigate();
 
@@ -23,7 +25,6 @@ const Login = () => {
                 const loggedInUser = result.user;
                 console.log(loggedInUser);
                 
-
                 if(loggedInUser?.email)
                 {
                     navigate(location.state ? location?.state : "/");

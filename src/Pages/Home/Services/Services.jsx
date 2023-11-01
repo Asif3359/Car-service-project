@@ -1,17 +1,19 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { FaArrowCircleRight, FaArrowRight } from "react-icons/fa";
+import useServices from '../../../Hooks/useServices';
 
 const Services = () => {
-    const [services, setServices] = useState([]);
+    // const [services, setServices] = useState([]);
 
-    useEffect(() => {
-        fetch("http://localhost:5000/services")
-            .then(res => res.json())
-            .then(data => {
-                setServices(data);
-            })
-    })
+    // useEffect(() => {
+    //     fetch("http://localhost:5000/services")
+    //         .then(res => res.json())
+    //         .then(data => {
+    //             setServices(data);
+    //         })
+    // })
+    const services= useServices();
     return (
         <div className='flex flex-col items-center justify-center mt-5'>
             <div className='text-center space-y-1'>
