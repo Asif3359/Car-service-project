@@ -1,11 +1,14 @@
 import { useContext } from "react";
 import imgLog from "../../assets/images/login/login.svg"
-import { Link } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { AuthContext } from "../../Providers/AuthProviders";
+import axios from "axios";
 
 const Login = () => {
 
-    const {singIn}=useContext(AuthContext);
+    const { singIn } = useContext(AuthContext);
+    const location = useLocation();
+    const navigate = useNavigate();
 
     const handleLogin = (event) => {
         event.preventDefault();
@@ -13,15 +16,31 @@ const Login = () => {
         const email = from.email.value;
         const password = from.password.value;
 
-        
-        console.log(email,password);
 
-        singIn(email,password)
-            .then(result =>{
-                const user=result.user;
-                console.log(user);
-            } )
-            .catch(error=>{
+
+        singIn(email, password)
+            .then(result => {
+                const loggedInUser = result.user;
+                console.log(loggedInUser);
+                
+
+                if(loggedInUser?.email)
+                {
+                    navigate(location.state ? location?.state : "/");
+                }
+                // const user = { email };
+
+                // // navigate(location.state?location?.state:"/");
+                // // get access token 
+                // axios.post('http://localhost:5000/jwt', user, { withCredentials: true })
+                //     .then(res => {
+                //         console.log(res.data);
+                //         if (res.data.success) {
+                //         }
+                //     })
+
+            })
+            .catch(error => {
                 console.log(error);
             })
     }

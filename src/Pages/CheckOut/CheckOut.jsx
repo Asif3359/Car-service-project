@@ -1,9 +1,11 @@
 import React, { useContext } from 'react';
-import { useLoaderData } from 'react-router-dom';
+import { useLoaderData, useLocation, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../Providers/AuthProviders';
 
 const CheckOut = () => {
     const service = useLoaderData();
+    const navigate = useNavigate();
+    const location = useLocation();
     const { title, _id, price, img } = service;
 
     const { user } = useContext(AuthContext);
@@ -25,19 +27,27 @@ const CheckOut = () => {
         };
         console.log(booking);
 
-
-        fetch("http://localhost:5000/bookings",{
-            method:"POST",
-            headers:{
-                'content-type':'application/json'
-            },
-            body: JSON.stringify(booking)
-        })
-            .then(res => res.json())
-            .then(data => {
-                console.log(data);
-                form.reset();
+        if (user?.email) {
+            // navigate(`/checkout/${id}`);
+            fetch("http://localhost:5000/bookings", {
+                method: "POST",
+                headers: {
+                    'content-type': 'application/json'
+                },
+                body: JSON.stringify(booking)
             })
+                .then(res => res.json())
+                .then(data => {
+                    console.log(data);
+                    form.reset();
+                })
+
+        }
+        else {
+
+            navigate('/login', { state: location.pathname });
+
+        }
 
     }
     return (

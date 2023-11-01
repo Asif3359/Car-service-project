@@ -1,5 +1,5 @@
 const Booking = ({ booking,handleDelete,handleConfirm }) => {
-    console.log(booking);
+    // console.log(booking);
     const {_id, customerName, service, date, email, name, img, price,status } = booking;
 
    
