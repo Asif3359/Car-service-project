@@ -29,7 +29,7 @@ const CheckOut = () => {
 
         if (user?.email) {
             // navigate(`/checkout/${id}`);
-            fetch("http://localhost:5000/bookings", {
+            fetch("https://car-doctor-server-md.vercel.app/bookings", {
                 method: "POST",
                 headers: {
                     'content-type': 'application/json'
